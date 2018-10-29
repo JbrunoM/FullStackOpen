@@ -1,0 +1,12 @@
+kayttaja -> selain:
+note left of selain
+kayttaja kirjoittaa uuden muistiinpanon ja painaa tallenna
+end note
+selain -> palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+note left of palvelin
+pyyntö sisältää JSON-muodossa olevan uuden muistiinpanon
+end note
+palvelin -> selain: status 201 created
+note left of selain
+selain näyttää sivun täydennettynä uudella muistiinpanolla
+end note
